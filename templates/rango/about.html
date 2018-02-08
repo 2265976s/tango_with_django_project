@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+
+{% load staticfiles %}
+
+<html>
+	<head>
+		<title>About</title>
+	</head>
+
+	<body>
+		<h1>This tutorial has been put together by Adi Laiman.</h1>
+		
+		<div>
+			<a href="/rango/">Index Page</a><br />
+		</div>
+		
+		<div>
+			<img src="{% static "images/rango.jpg" %}"
+				alt="Rango: A Green Lizard" />
+		</div>
+		
+		<div>
+			<img src="{{MEDIA_URL}}cat.jpg"
+				alt="A Cat" />
+		</div>
+	</body>
+</html>
